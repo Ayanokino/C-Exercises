@@ -116,6 +116,39 @@ namespace C_Exercises
             Console.WriteLine($"Result of specified numbers {number1},{number2} and {number3},(x+y)*z is {result1} and x*y + y*z is {result2}");
             Console.ReadKey();
         }
+        public static void Exercise11()
+        {
+            int age;
+            Console.WriteLine("Write your age: ");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("You look older than " + age);
+            Console.ReadKey();
+        }
+        public static void Exercise12()
+        {
+            int Number;
+            Console.WriteLine("Enter a Number: ");
+            Number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0} {0} {0} {0}",Number);
+            Console.WriteLine("{0}{0}{0}{0}",Number);
+            Console.WriteLine("{0} {0} {0} {0}", Number);
+            Console.WriteLine("{0}{0}{0}{0}", Number);
+            Console.ReadKey();
+        }
+        public static void Exercise13()
+        {
+            int x;
+            Console.Write("Enter a number: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0}{0}{0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0}{0}{0}", x);
+        }
+        public static void Exercise14() 
+        {
 
+        }
     }
 }
