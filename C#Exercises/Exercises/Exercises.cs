@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -116,7 +117,7 @@ namespace C_Exercises
             Console.WriteLine($"Result of specified numbers {number1},{number2} and {number3},(x+y)*z is {result1} and x*y + y*z is {result2}");
             Console.ReadKey();
         }
-        public static void Exercise11()
+        public void Exercise11()
         {
             int age;
             Console.WriteLine("Write your age: ");
@@ -124,7 +125,7 @@ namespace C_Exercises
             Console.WriteLine("You look older than " + age);
             Console.ReadKey();
         }
-        public static void Exercise12()
+        public void Exercise12()
         {
             int Number;
             Console.WriteLine("Enter a Number: ");
@@ -135,7 +136,7 @@ namespace C_Exercises
             Console.WriteLine("{0}{0}{0}{0}", Number);
             Console.ReadKey();
         }
-        public static void Exercise13()
+        public void Exercise13()
         {
             int x;
             Console.Write("Enter a number: ");
@@ -146,9 +147,38 @@ namespace C_Exercises
             Console.WriteLine("{0} {0}", x);
             Console.WriteLine("{0}{0}{0}", x);
         }
-        public static void Exercise14() 
+        public void Exercise14() 
         {
-
+            double Celsius, Fahrenheit, Kelvin, Reaumur;
+            Console.WriteLine("Skrive en temperatur i celsius: ");
+            Celsius = Convert.ToDouble(Console.ReadLine());
+            Fahrenheit = (Celsius * 9 / 5) + 32;
+            Kelvin = Celsius + 273.15;
+            Reaumur = Celsius * 0.8;
+            Console.WriteLine($"Fahrenheit: {Fahrenheit}\nKelvin: {Kelvin}\nReaumur: {Reaumur}");
+            Console.ReadKey();
+        }
+        public void Exercise15() 
+        {
+            Console.WriteLine(remove_char("GamerName",1));
+            Console.WriteLine(remove_char("GamerName",9));
+            Console.WriteLine(remove_char("GamerName",0));
+            Console.ReadKey();
+        }
+        public static string remove_char(string str, int n)
+        {
+            return str.Remove(n, 1);
+        }
+        public void Exercise16()
+        {
+            Console.WriteLine(first_last("w3resource"));
+            Console.WriteLine(first_last("Python"));
+            Console.WriteLine(first_last("E"));
+        }
+        public static string first_last(string ustr)
+        {
+            return ustr.Length > 1
+               ? ustr.Substring(ustr.Length) + ustr.Substring(1,ustr.Length - 2) + ustr.Substring(0,1) : ustr;
         }
     }
 }
