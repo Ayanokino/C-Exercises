@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace C_Exercises
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            Exercises exercises = new Exercises();
+            exercises.Exercise8();
         }
     }
 }

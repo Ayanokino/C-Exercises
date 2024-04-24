@@ -1,0 +1,8 @@
+C:\Users\G20\Desktop\C#Exercises\C#Exercises\bin\Debug\C#Exercises.exe.config
+C:\Users\G20\Desktop\C#Exercises\C#Exercises\bin\Debug\C#Exercises.exe
+C:\Users\G20\Desktop\C#Exercises\C#Exercises\bin\Debug\C#Exercises.pdb
+C:\Users\G20\Desktop\C#Exercises\C#Exercises\obj\Debug\C#Exercises.csproj.AssemblyReference.cache
+C:\Users\G20\Desktop\C#Exercises\C#Exercises\obj\Debug\C#Exercises.csproj.SuggestedBindingRedirects.cache
+C:\Users\G20\Desktop\C#Exercises\C#Exercises\obj\Debug\C#Exercises.csproj.CoreCompileInputs.cache
+C:\Users\G20\Desktop\C#Exercises\C#Exercises\obj\Debug\C#Exercises.exe
+C:\Users\G20\Desktop\C#Exercises\C#Exercises\obj\Debug\C#Exercises.pdb
