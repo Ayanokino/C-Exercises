@@ -86,5 +86,36 @@ namespace C_Exercises
             while (LoopNumber !=  10);
             Console.ReadKey();
         }
+        public void Exercise9()
+        {
+            double number1, number2, number3, number4;
+
+            Console.Write("Enter the First number: ");
+            number1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter the Second number: ");
+            number2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter the third number: ");
+            number3 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter the fourth number: ");
+            number4 = Convert.ToDouble(Console.ReadLine());
+            double result = (number1 + number2 + number3 + number4) / 4;
+            Console.WriteLine("The average of {0}, {1}, {2}, {3} is: {4} ",
+                number1, number2, number3, number4, result);
+        }
+        public void Exercise10()
+        {
+            int number1, number2, number3, result1, result2;
+            Console.Write("Enter the First number: ");
+            number1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the Second number: ");
+            number2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the third number: ");
+            number3 = Convert.ToInt32(Console.ReadLine());
+            result1 = (number1 + number2) * number3;
+            result2 = number1 * number2 + number2 * number3;
+            Console.WriteLine($"Result of specified numbers {number1},{number2} and {number3},(x+y)*z is {result1} and x*y + y*z is {result2}");
+            Console.ReadKey();
+        }
+
     }
 }
