@@ -12,17 +12,14 @@ namespace C_Exercises
         public void Exercise1()
         {
             Console.WriteLine("Hello\nLucas Pinto");
-            Console.ReadKey();
         }
         public void Exercise2()
         {
             Console.WriteLine(2 + 2);
-            Console.ReadKey();
         }
         public void Exercise3()
         {
             Console.WriteLine(3 / 3);
-            Console.ReadKey();
         }
         public void Exercise4()
         {
@@ -30,7 +27,6 @@ namespace C_Exercises
             Console.WriteLine((35 + 5) % 7);
             Console.WriteLine(14 + -4 * 6 / 11);
             Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
-            Console.ReadKey();
         }
         public void Exercise5()
         {
@@ -45,7 +41,6 @@ namespace C_Exercises
             Console.WriteLine("After Swapping the two numbers: ");
             Console.WriteLine("First number: " + num1);
             Console.WriteLine("Second numbber: " + num2);
-            Console.ReadKey();
         }
         public void Exercise6()
         {
@@ -72,7 +67,6 @@ namespace C_Exercises
             gange = num1 / num2;
             mod = num1 % num2;
             Console.WriteLine($"+ {plus}\n- {minus}\n/ {division}\n* {gange}\n% {mod}");
-            Console.ReadKey();
         }
         public void Exercise8()
         {
@@ -85,7 +79,6 @@ namespace C_Exercises
                 LoopNumber++;
             }
             while (LoopNumber !=  10);
-            Console.ReadKey();
         }
         public void Exercise9()
         {
@@ -115,7 +108,6 @@ namespace C_Exercises
             result1 = (number1 + number2) * number3;
             result2 = number1 * number2 + number2 * number3;
             Console.WriteLine($"Result of specified numbers {number1},{number2} and {number3},(x+y)*z is {result1} and x*y + y*z is {result2}");
-            Console.ReadKey();
         }
         public void Exercise11()
         {
@@ -123,7 +115,6 @@ namespace C_Exercises
             Console.WriteLine("Write your age: ");
             age = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("You look older than " + age);
-            Console.ReadKey();
         }
         public void Exercise12()
         {
@@ -134,7 +125,6 @@ namespace C_Exercises
             Console.WriteLine("{0}{0}{0}{0}",Number);
             Console.WriteLine("{0} {0} {0} {0}", Number);
             Console.WriteLine("{0}{0}{0}{0}", Number);
-            Console.ReadKey();
         }
         public void Exercise13()
         {
@@ -156,14 +146,12 @@ namespace C_Exercises
             Kelvin = Celsius + 273.15;
             Reaumur = Celsius * 0.8;
             Console.WriteLine($"Fahrenheit: {Fahrenheit}\nKelvin: {Kelvin}\nReaumur: {Reaumur}");
-            Console.ReadKey();
         }
         public void Exercise15() 
         {
             Console.WriteLine(remove_char("GamerName",1));
             Console.WriteLine(remove_char("GamerName",9));
             Console.WriteLine(remove_char("GamerName",0));
-            Console.ReadKey();
         }
         public static string remove_char(string str, int n)
         {
@@ -179,6 +167,30 @@ namespace C_Exercises
         {
             return ustr.Length > 1
                ? ustr.Substring(ustr.Length) + ustr.Substring(1,ustr.Length - 2) + ustr.Substring(0,1) : ustr;
+        }
+        public void Exercise17()
+        {
+            string str;
+            Console.WriteLine("Input a string");
+            str = Console.ReadLine();
+            if (str.Length > 1)
+            {
+                var s = str.Substring(0, 1);
+                Console.WriteLine(s + str + s);
+            }
+        }
+        public void Exercise18()
+        {
+            int int1, int2;
+            Console.WriteLine("Input the first integer: ");
+            int1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input the second integer: ");
+            int2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(int1<0 || int2<0);
+        }
+        public void Exercise19()
+        {
+
         }
     }
 }

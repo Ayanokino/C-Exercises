@@ -11,7 +11,8 @@ namespace C_Exercises
         static void Main(string[] args)
         {
             Exercises exercises = new Exercises();
-            exercises.Exercise8();
+            exercises.Exercise18();
+            Console.ReadKey();
         }
     }
 }
