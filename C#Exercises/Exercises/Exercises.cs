@@ -64,13 +64,13 @@ namespace C_Exercises
             plus = num1 + num2;
             minus = num1 - num2;
             division = num1 / num2;
-            gange = num1 / num2;
+            gange = num1 * num2;
             mod = num1 % num2;
             Console.WriteLine($"+ {plus}\n- {minus}\n/ {division}\n* {gange}\n% {mod}");
         }
         public void Exercise8()
         {
-            double Number,LoopNumber = 0;
+            int Number,LoopNumber = 0;
             Console.WriteLine("Enter a number: ");
             Number = int.Parse(Console.ReadLine());
             do
@@ -78,7 +78,7 @@ namespace C_Exercises
                 Console.WriteLine("{0} * {1} = {2}", Number, LoopNumber, Number * LoopNumber);
                 LoopNumber++;
             }
-            while (LoopNumber !=  10);
+            while (LoopNumber !=  11);
         }
         public void Exercise9()
         {
@@ -190,7 +190,58 @@ namespace C_Exercises
         }
         public void Exercise19()
         {
-
+            int int1, int2;
+            Console.WriteLine("Input the first integer: ");
+            int1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input the second integer: ");
+            int2 = Convert.ToInt32(Console.ReadLine());
+            if (int1 == int2)
+            {
+                Console.WriteLine(int1*3);
+            }
+            else
+            {
+                Console.WriteLine(int1 + int2);
+            }
+        }
+        public void Exercise20()
+        {
+            int int1, int2,DoubleValue;
+            Console.WriteLine("Input the first integer: ");
+            int1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input the second integer: ");
+            int2 = Convert.ToInt32(Console.ReadLine());
+            if (int1>int2)
+            {
+                DoubleValue = int1 - int2;
+                Console.WriteLine(DoubleValue * 2);
+            }
+            else if(int2 > int1) 
+            {
+                Console.WriteLine(int2 - int1);
+            }
+        }
+        public void Exercise21()
+        {
+            int int1, int2,result;
+            Console.WriteLine("Input the first integer: ");
+            int1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input the second integer: ");
+            int2 = Convert.ToInt32(Console.ReadLine());
+            result = int1 + int2;
+            Console.WriteLine(result ==20 || int1==20 || int2==20);
+        }
+        public void Exercise22()
+        {
+            int number;
+            Console.WriteLine("Write a number: ");
+            number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(result(number));
+        }
+        public static bool result(int n)
+        {
+            if (Math.Abs(n - 100) <= 20 || Math.Abs(n - 200) <= 20)
+                return true; return false;
         }
     }
 }
