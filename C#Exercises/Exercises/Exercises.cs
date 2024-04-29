@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace C_Exercises
 {
@@ -242,6 +244,49 @@ namespace C_Exercises
         {
             if (Math.Abs(n - 100) <= 20 || Math.Abs(n - 200) <= 20)
                 return true; return false;
+        }
+        public void Exercise23()
+        {
+            string test = "This is a C# test string";
+            Console.WriteLine(test.ToLower());
+        }
+        public void Exercise24()
+        {
+            string test = "This is a C# test string";
+            string[] words = test.Split(new[] { " " }, StringSplitOptions.None);
+
+            string word = "";
+            int ctr = 0;
+
+            foreach (String s in words)
+            {
+                if(s.Length > ctr)
+                {
+                    word = s;
+                    ctr = s.Length;
+                }
+            }
+            Console.WriteLine(word);
+        }
+        public void Exercise25()
+        {
+            int loopNumber = 0, number = 0;
+            do
+            {
+                if (number % 2 != 0)
+                {
+                    Console.WriteLine(number);
+                    
+                }
+                number++;
+
+                loopNumber++;
+            }
+            while (loopNumber != 100);
+        }
+        public void Exercise26()
+        {
+
         }
     }
 }
