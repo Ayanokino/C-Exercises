@@ -286,7 +286,10 @@ namespace C_Exercises
         }
         public void Exercise26()
         {
+            for(int n = 0; n > 1 && n != n/2; n++) 
+            {
 
+            }
         }
     }
 }
