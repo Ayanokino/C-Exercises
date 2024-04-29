@@ -10,11 +10,10 @@ namespace C_Exercises
     {
         static void Main(string[] args)
         {
-            Bil bil = new Bil();
-            bil.Pris();
+           
 
             Exercises exercises = new Exercises();
-            exercises.Exercise25();
+            exercises.Exercise26();
             Console.ReadKey();
         }
     }

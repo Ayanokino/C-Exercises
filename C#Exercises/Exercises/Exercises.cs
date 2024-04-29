@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -286,10 +287,35 @@ namespace C_Exercises
         }
         public void Exercise26()
         {
-            for(int n = 0; n > 1 && n != n/2; n++) 
-            {
+            int sum = 0, count = 0, n = 2;//Sum holder på sum af prime numbers og n starter fra den første prime number
 
+            //loop til at finde sum af de første 500 prime numbers
+            while (count < 500)
+            {
+                if (isPrime(n)) //Checker om n er et prime number ved at kalde på isPrime method
+                {
+                    sum += n;// Putter numer n i sum variablet
+                    count++;
+                }
+                n++;//tage den næste tal 
+                
             }
+            Console.WriteLine(sum);//displayer hele summen
+        }
+        public static bool isPrime(int n)
+        {
+            int x = (int)Math.Floor(Math.Sqrt(n));//finder square root a n
+
+            if (n == 1) return false; //1 er ikke en prime number
+            if (n == 2) return true; //2 er en prime number
+
+            //Loop til at check om n kan divideres med været som helst tal fra 2 til kvadrat rulen af n
+            for(int i = 2; i <= x; i++)
+            {
+                if (n % i == 0) return false;//Hvis n kan divideres med i, så er det ikke en prime number
+            }
+
+            return true; //n er en prime number hvis den kun kan divideres med sig selv og 1
         }
     }
 }
